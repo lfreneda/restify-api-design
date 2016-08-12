@@ -27,6 +27,11 @@ debug/**/*.map
 debug/*.js
 debug/*.map
 
+api/**/*.js
+api/**/*.map
+api/*.js
+api/*.map
+
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
 
