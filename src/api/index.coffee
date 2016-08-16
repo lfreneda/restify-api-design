@@ -15,5 +15,9 @@ server.use restify.fullResponse()
 
 server.get '/', (req, res) -> res.send { app: server.name }
 
-server.listen process.env.PORT or 8888, () ->
+module.configureRoutes server for module in [
+  require './modules/users/index'
+]
+
+server.listen 7777, () ->
   console.log '%s is listening at %s', server.name, server.url
