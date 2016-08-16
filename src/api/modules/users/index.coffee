@@ -1,10 +1,9 @@
-controller = require './controller'
+actions = require './actions'
 
 module.exports =
   configureRoutes: (server) ->
-    server.get '/users', controller.get
-    server.get '/users/:id', controller.getAll
-    server.post '/users', controller.post
-    server.put '/users/:id', controller.put
-    server.patch '/users/:id', controller.patch
-    server.del '/users', controller.del
+    server.get '/users', actions.get
+    server.get '/users/:id', actions.getAll
+    server.post '/users', actions.post
+    server.put '/users/:id', actions.put
+    server.del '/users', actions.del
