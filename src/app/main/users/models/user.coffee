@@ -1,8 +1,8 @@
-sanitize = require './../../../core/shared/models/binder'
+sanitizer = require './../../../core/shared/models/sanitizer'
 schema = require './schema'
 
 class User
   constructor: (values) ->
-    sanitize @, { schema: schema, values: values }
+    sanitizer @, { schema: schema, values: values }
 
 module.exports = User
